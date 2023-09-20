@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPGG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
+    <script src="script.js"></script>    
+</head>
+<body>
+    <div id="container">
+
+        <h1>League Status</h1> <br>
+
+        <div id="summoner_name_div"> 
+            Summoner name: <input class="styled-input" type="text" id="summoner_name" placeholder="Enter the summoner name"><br> <br>
+        </div>
+
+       <div id="select_region_div">
+            Select Region: <select id="choose_region" onclick="chooseRegion()">
+                <option value="0">BR</option>
+                <option value="1">EUN</option>
+                <option value="2">EUW</option>
+                <option value="3">JP</option>
+                <option value="4">KR</option>
+                <option value="5">LA</option>
+                <option value="6">LA2</option>
+                <option value="7">NA</option>
+                <option value="8">OC</option>
+                <option value="9">TR</option>
+                <option value="">RU</option>
+            </select>
+       </div>
+        
+        <div id="testregion"></div><br>
+
+        <input type="button" id="search_button" value="Search Summoner" onclick="Search_summoner()"> <br> <br>
+
+        <div id="summoner_name_data"></div> <br>
+
+        <div id="summonerlevel_data"></div> 
+
+        <div id="summonerprofilepic_data"> <br> 
+            <img id="summonerprofilepic_picture" src="" >
+        </div>
+        
+        <div id="ranked_DATA"> <br>
+            <div id="ranked_win">
+
+            </div>
+            <div id="ranked_lose">
+
+            </div> 
+            <div id="ranked_winratio">
+
+            </div>
+            <div id="ranked_division">
+
+            </div>
+        </div>
+
+   </div>
+</body>
+</html>
